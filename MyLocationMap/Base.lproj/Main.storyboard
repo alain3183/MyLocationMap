@@ -24,6 +24,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Maps" id="S2b-Bi-TJW"/>
+                    <connections>
+                        <outlet property="mapView" destination="flY-g9-IjN" id="yEz-B9-8lg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

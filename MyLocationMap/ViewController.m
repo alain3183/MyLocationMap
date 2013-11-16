@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize mapView;
 
 - (void)viewDidLoad
 {
