@@ -18,7 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.mapView.delegate = self;
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
